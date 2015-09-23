@@ -1,0 +1,8 @@
+Host alias1
+  Hostname 123.123.123.123
+  Port 18782
+  User user1
+Host alias2
+  Hostname 124.124.124.124
+  Port 22
+  User user2
