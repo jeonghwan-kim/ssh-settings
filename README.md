@@ -142,7 +142,9 @@ $ ssh -p 22 user@hostname
 
 ## 문제 해결
 
-ssh 접속시 아래 메세지 출력하는 경우
+### ssh 접속시 인증 시도 실패시
+
+에러 메세지: 
 
 > Too many authentication failures for username
 
@@ -151,4 +153,16 @@ ssh 접속시 아래 메세지 출력하는 경우
 
 ```
 ssh ubuntu@hostname -i -o IdentitiesOnly=yes -i key_file_path
+```
+
+### ssh 접속시 ECDSA host key 관려 오류 
+
+에러 메세지: 
+
+> Warning: the ECDSA host key for 'myserver' differs from the key for the IP address '192.168.123.456'
+
+로컬 캐쉬를 제거하고 재시도한다.
+
+```
+$ ssh-keygen -R 192.168.123.456
 ```
