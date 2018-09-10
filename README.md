@@ -1,3 +1,5 @@
+> deprecated: https://github.com/jeonghwan-kim/tips 으로 이동 
+
 
 원격로그인(SSH) 접속  
 ================
